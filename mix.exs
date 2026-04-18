@@ -1,7 +1,7 @@
 defmodule EctoTrim.MixProject do
   use Mix.Project
 
-  @version "1.0.0"
+  @version "1.0.1"
   @source_url "https://github.com/exfoundry/ecto_trim"
 
   def project do
@@ -47,7 +47,7 @@ defmodule EctoTrim.MixProject do
         "GitHub" => @source_url,
         "Changelog" => "https://hexdocs.pm/ecto_trim/changelog.html"
       },
-      files: ~w(lib mix.exs README.md CHANGELOG.md LICENSE)
+      files: ~w(lib mix.exs README.md CHANGELOG.md LICENSE usage-rules.md)
     ]
   end
 end
