@@ -11,6 +11,7 @@ defmodule EctoTrim.MixProject do
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
+      aliases: aliases(),
       description: description(),
       package: package(),
       name: "EctoTrim",
@@ -20,6 +21,21 @@ defmodule EctoTrim.MixProject do
         source_ref: "v#{@version}",
         extras: ["CHANGELOG.md"],
         skip_undefined_reference_warnings_on: ["CHANGELOG.md"]
+      ]
+    ]
+  end
+
+  def cli do
+    [preferred_envs: [precommit: :test]]
+  end
+
+  defp aliases do
+    [
+      precommit: [
+        "compile --warning-as-errors",
+        "deps.unlock --unused",
+        "format --check-formatted",
+        "test"
       ]
     ]
   end
