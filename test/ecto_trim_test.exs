@@ -83,6 +83,7 @@ defmodule EctoTrimTest do
   describe "dump/3" do
     test "normalizes on dump" do
       params = EctoTrim.init(mode: :single_line)
+
       assert {:ok, "hello world"} = EctoTrim.dump("  hello   world  ", &Function.identity/1, params)
     end
 
