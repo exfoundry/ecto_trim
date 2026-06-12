@@ -1,5 +1,10 @@
 # EctoTrim
 
+[![Hex.pm](https://img.shields.io/hexpm/v/ecto_trim.svg)](https://hex.pm/packages/ecto_trim)
+[![Hexdocs](https://img.shields.io/badge/hex-docs-purple.svg)](https://hexdocs.pm/ecto_trim)
+[![CI](https://github.com/saschabrink/ecto_trim/actions/workflows/ci.yml/badge.svg)](https://github.com/saschabrink/ecto_trim/actions/workflows/ci.yml)
+[![License](https://img.shields.io/hexpm/l/ecto_trim.svg)](https://github.com/saschabrink/ecto_trim/blob/main/LICENSE)
+
 Ecto parameterized type that trims and normalizes whitespace on cast and dump.
 
 ## Why

@@ -1,8 +1,8 @@
 defmodule EctoTrim.MixProject do
   use Mix.Project
 
-  @version "1.0.1"
-  @source_url "https://github.com/exfoundry/ecto_trim"
+  @version "1.0.2"
+  @source_url "https://github.com/saschabrink/ecto_trim"
 
   def project do
     [
